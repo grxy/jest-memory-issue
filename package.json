@@ -1,0 +1,21 @@
+{
+  "name": "jest-memory-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:grxy/jest-memory-issue.git",
+  "author": "Grex <andrew@grexa.me>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "jest": "^27.4.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "jest-js": "jest -c ./jest.config.js --logHeapUsage --runInBand",
+    "jest-ts": "jest -c ./jest.config.ts --logHeapUsage --runInBand"
+  }
+}
